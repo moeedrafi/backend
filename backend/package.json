@@ -5,14 +5,16 @@
   "type": "module",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "moeed rafi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.12.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.9",
